@@ -17,12 +17,12 @@ class AboutUi extends StatelessWidget {
                   'Body Health Calculator',
                   style: TextStyle(
                     color:Colors.deepOrange,
-                    fontSize: MediaQuery.of(context).size.height*0.2,
+                    fontSize: MediaQuery.of(context).size.height*0.025,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 Image.asset(
-                  'assets/image/calculate.png',
+                  'assets/images/calculate.png',
                 width: MediaQuery.of(context).size.height*0.2,
                 height: MediaQuery.of(context).size.height*0.2,
                 fit: BoxFit.cover,
@@ -34,7 +34,7 @@ class AboutUi extends StatelessWidget {
                   'คำนวณหาค่าดัชนีมวลกาย (BMI)',
                   style: TextStyle(
                     color:Colors.deepOrange,
-                    fontSize: MediaQuery.of(context).size.height*0.2,
+                    fontSize: MediaQuery.of(context).size.height*0.025,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -42,7 +42,7 @@ class AboutUi extends StatelessWidget {
                   'คำนวณหาแคลลอรี่ที่ร่างกายต้องการ (ฺBMR)',
                   style: TextStyle(
                     color:Colors.deepOrange,
-                    fontSize: MediaQuery.of(context).size.height*0.2,
+                    fontSize: MediaQuery.of(context).size.height*0.025,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -51,6 +51,26 @@ class AboutUi extends StatelessWidget {
             ),
 
           ),
+          Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Image.asset(
+                'assets/images/saulogo.png',
+                width: MediaQuery.of(context).size.height*0.2,
+                height: MediaQuery.of(context).size.height*0.2,
+                fit: BoxFit.cover
+                ),
+                Text(
+                  '© 2026 SAU. All right reserved.😀✌✌✌'
+                ),
+                Text(
+                  'Created by Software Devleopment Team'
+                ),
+                SizedBox(height: 30,),
+              ],
+            ),
+          )
         ],
       ),
     );
